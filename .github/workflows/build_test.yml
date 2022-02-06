@@ -23,6 +23,6 @@ jobs:
         cd myapp
         python3 manage.py test
     - name: push to sonarcloud   
-      uses: GitHubActionsCI-CD/sonarqube-action@v1.1.0
+      uses: actions/sonarqube-action@v1.1.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}    
