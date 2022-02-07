@@ -32,9 +32,13 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Nexus Artifact Repository
-      uses: sonatype-nexus-community/iq-github-action@master
-    - name: uploading python file to nexus  
+    - name: Nexus Repo Publish
+      uses: sonatype-nexus-community/nexus-repo-github-action@master
+      with:
+        serverUrl: http://192.168.0.171:8081/repository/testproject/
+        username: admin
+        password: admin
+    - name: uploading python file to nexus    
       run: |
         cd myapp
         ls -lrta
