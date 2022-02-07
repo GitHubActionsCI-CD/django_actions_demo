@@ -36,6 +36,7 @@ jobs:
       uses: sonatype-nexus-community/iq-github-action@master
     - name: uploading python file to nexus  
       run: |
+        cd myapp
         twine upload -r pypi manage.py
         
         
