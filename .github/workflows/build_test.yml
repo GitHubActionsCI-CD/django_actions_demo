@@ -42,7 +42,7 @@ jobs:
         repository: testproject
         coordinates: groupId=com.example artifactId=myapp
         assets: filename=manage.py
-        filename: twine upload -r pypi manage.py
+        filename: ./myapp/manage.py
    
         
         
