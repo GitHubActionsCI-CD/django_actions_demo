@@ -39,6 +39,7 @@ jobs:
         username: admin
         password: admin
         format: pypi
+        repository: testproject
     - name: uploading python file to nexus    
       run: |
         cd myapp
