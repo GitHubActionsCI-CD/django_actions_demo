@@ -40,7 +40,6 @@ jobs:
         password: admin
         format: pypi
         repository: testproject
-        applicationId: testproject
         coordinates: groupId=com.example artifactId=myapp
         assets: filename=manage.py
     - name: uploading python file to nexus    
