@@ -32,9 +32,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    steps:    
     - name: Nexus Artifact Repository
       uses: sonatype-nexus-community/iq-github-action@master
+    - name: uploading python file to nexus  
       run: |
         twine upload -r pypi manage.py
         
