@@ -40,6 +40,8 @@ jobs:
         password: admin
         format: pypi
         repository: testproject
+        applicationId: testproject
+        coordinates: groupId=com.example artifactId=myapp 
     - name: uploading python file to nexus    
       run: |
         cd myapp
