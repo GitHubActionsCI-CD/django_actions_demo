@@ -38,6 +38,7 @@ jobs:
         serverUrl: http://192.168.0.171:8081/repository/testproject/
         username: admin
         password: admin
+        format: pypi
     - name: uploading python file to nexus    
       run: |
         cd myapp
