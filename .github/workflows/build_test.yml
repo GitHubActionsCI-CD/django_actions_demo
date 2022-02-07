@@ -42,6 +42,7 @@ jobs:
         repository: testproject
         coordinates: groupId=com.example artifactId=myapp
         assets: filename=manage.py
+        filename: ./myapp/manage.py
     - name: uploading python file to nexus    
       run: |
         cd myapp
