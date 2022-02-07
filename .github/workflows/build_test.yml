@@ -37,7 +37,8 @@ jobs:
     - name: uploading python file to nexus  
       run: |
         cd myapp
-        twine upload -r pypi manage.py
+        ls -lrta
+#       twine upload -r pypi manage.py
         
         
         
