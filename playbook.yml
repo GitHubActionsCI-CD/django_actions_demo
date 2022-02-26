@@ -8,7 +8,7 @@
         name: "{{ image }}"
         build:
           path: /home/tcs/vikash/       
-        tag: v1
+        tag: "{{ test }}"
         source: build
         state: present  
       register: output
