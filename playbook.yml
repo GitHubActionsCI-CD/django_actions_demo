@@ -1,0 +1,17 @@
+- hosts: localhost
+  become: true
+  vars: 
+    image: "images"
+  tasks:
+    - name: Build docker image
+      docker_image:
+        name: "{{ image }}"
+        build:
+          path: /home/tcs/vikash/       
+        tag: v1
+        source: build
+        state: present  
+      register: output
+    - name: Show the output
+      debug:
+        msg: "{{ output }}"  
