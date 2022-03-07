@@ -7,7 +7,7 @@
       docker_image:
         name: "{{ image }}"
         build:
-          path: /home/tcs/vikash/       
+          path: .       
         tag: "{{ test }}"
         source: build
         state: present  
