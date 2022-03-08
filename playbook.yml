@@ -1,5 +1,4 @@
 - hosts: localhost
-  user: tcs
   become: yes
   vars: 
     image: "images"
