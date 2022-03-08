@@ -1,4 +1,5 @@
 - hosts: localhost
+  become: yes
   vars: 
     image: "images"
   tasks:
